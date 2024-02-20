@@ -1,13 +1,9 @@
-function showMenu(){
-    let menu = document.querySelector("nav.menu");
-    menu.classList.toggle("show");
-    let layer = document.querySelector(".fade-layer");
-    layer.classList.toggle("visible")
-    }
-    
-    let layer = document.querySelector(".fade-layer");
-    layer.addEventListener("click", showMenu)
-    
-     let button = document.querySelector(".menu-button");
-     button.addEventListener("click",showMenu);
-    
+/* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+  
+  /* Set the width of the sidebar to 0 (hide it) */
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }

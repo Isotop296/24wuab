@@ -5,25 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/style1.css">
 </head>
 <body>
-  <nav class="topnav">
-    <img src="img/honks.gif" alt="anka" class="bild">
-    <img src="" alt="">
-      <nav class="menu">
-      <a href="#">Item 1</a>
-       <a href="#">Item 2</a>
-       <a href="#">Item 3</a>
-       <a href="#">Item 4</a>
-       <a href="#">Item 5</a>
-</nav>
-<div class="fade-layer"></div>
-<div class="menu-button">
-  <i class="material-icons">menu</i>
+  <div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 </div>
-</nav>
 
+<button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+<h2>Collapsed Sidepanel</h2>
+<p>Content...</p>
   
 <script src="js/main.js"></script>
 </body>
