@@ -1,3 +1,9 @@
+body{
+  background-color: #203454 ;
+}
+
+
+
 /* The sidepanel menu */
 .sidepanel {
     height: 600px; /* Specify a height */
@@ -61,18 +67,21 @@
 
   /* nav start*/
 .navigation{
-    background-color: #203454;
-    width: 97%;
+    background-color: #181c24;
+    width: 100%;
     position: fixed;
-    border-radius: 0px 12px 12px 0px;
+    /*border-radius: 0px 12px 12px 0px;*/
+    top: 0;
+    left: 0; /*kan användas om jag vill ha att naven ska täka hela topen*/
 }
 
 
 .dinprofil{
     width: fit-content;
-    height: 8vh;
+    height: 7vh;
     position: right fixed;
     float: right;
     border-radius: 100px;
+    padding-top: 4px;
 }
   /*nav end*/
