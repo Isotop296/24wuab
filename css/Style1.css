@@ -1,6 +1,6 @@
 /* The sidepanel menu */
 .sidepanel {
-    height: 250px; /* Specify a height */
+    height: 600px; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -49,3 +49,30 @@
   .openbtn:hover {
     background-color: #444;
   }
+
+  .logga{
+    width: auto;
+    height: 40px;
+    transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    /*display: block;*/
+  }
+  /*end of slide panel*/
+
+  /* nav start*/
+.navigation{
+    background-color: #203454;
+    width: 97%;
+    position: fixed;
+    border-radius: 0px 12px 12px 0px;
+}
+
+
+.dinprofil{
+    width: fit-content;
+    height: 8vh;
+    position: right fixed;
+    float: right;
+    border-radius: 100px;
+}
+  /*nav end*/
