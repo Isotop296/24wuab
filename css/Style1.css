@@ -1,6 +1,7 @@
 body{
-  background-color: #203454 ;
-
+  background-color: #181c24 ;
+  padding: 0%;
+  margin: 0;
 }
 
 
@@ -13,7 +14,7 @@ body{
     z-index: 0; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: #111111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
@@ -97,7 +98,7 @@ body{
    background-color: #203454;
    box-shadow: 15px;
    border-radius: 100px;
-
+height: 60px;
 }
   /*nav end*/
 /*main start*/
@@ -107,27 +108,28 @@ body{
   width: 100%;
   height: auto;
   padding-top: 62px;
-z-index: 2;
 background-color: #111;
 }
 
 /*main slut*/
   
 /*sektion1 start*/
+
 #wrapper{
+ 
   column-gap: 2vh;
-  row-gap: 2vh;
+  row-gap: 5vh;
   display: grid;
-  width: 92%;
-  height: 100px;
+  width: 100%;
+  height: 150px;
   grid-row: 10vh;
-  grid-template-columns: 11% 30% 3% 30% 26%;
-  grid-template-rows: 10% 40% 40% 10%;
+  grid-template-columns: 0.1% 20% 20% 20% 20% 19.9%;
+  grid-template-rows: 10% 30% 60%;
   grid-template-areas:
-  '. . . . .'
-  '. knapp1 . knapp3 .'   
-  '. knapp2 . knapp4 .' 
-  '. . . . .'
+  '. . . . . .'
+  '. knapp1 knapp2 knapp3 knapp4 .'   
+  '. . . . . .' 
+ 
   ;
   
 }
@@ -137,6 +139,7 @@ grid-area: knapp1;
 background-color: #540253;
    box-shadow: 15px;
    border-radius: 100px;
+color: gainsboro;
 }
 
 
@@ -145,18 +148,35 @@ background-color: #540253;
   background-color: #5a1ba6;
   box-shadow: 15px;
   border-radius: 100px;
+  color: gainsboro;
 }
 .knapp3{
   grid-area: knapp3;
   background-color: #033078;
   box-shadow: 15px;
   border-radius: 100px;
+  color: gainsboro;
 }
 .knapp4{
   grid-area: knapp4;
   background-color: #01453a;
   box-shadow: 15px;
   border-radius: 100px;
+  color: gainsboro;
 }
 
 /*sektion1 slut*/
+
+
+/*footer start*/
+.footer{
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #111111;
+}
+
+/*footer slut*/
