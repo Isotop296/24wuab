@@ -365,7 +365,7 @@ width: 35%;
 }
 
 .bildslide{
-  width: 230px;
+  width: 240px;
   height: fit-content;
   padding-left: 5%;
   padding-bottom: 10px;
@@ -375,16 +375,6 @@ width: 35%;
 
 
 /*search bar start*/
-#wrapper{
-
-  
-}
-.knap input[type=text] {
-  padding-left: 45%;
-  padding-top: 100px;
-  border: none;
-  font-size: 17px;
-}
 
 /*search bar end*/
 
