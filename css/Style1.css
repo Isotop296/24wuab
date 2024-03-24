@@ -1,9 +1,11 @@
 body{
-  background-color: #203454;
+  background-color: #171d25;
   padding: 0%;
   margin: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 /* The sidepanel menu */
@@ -89,7 +91,7 @@ body{
   .navigation{
     background-color: #171d25;
     width: 100%;
-    height: 50px;
+    height: 54.5px;
     position: fixed;
     /*border-radius: 0px 12px 12px 0px;*/
     z-index: 3;
@@ -109,21 +111,29 @@ body{
   
 
 }
-
+@media (min-width: 1000px){
 .dinprofil{
     width: fit-content;
-    height: 6vh;
+    height: 8vh;
     position: right fixed;
     float: right;
     border-radius: 100px;
     padding-top: 4px;
 }
-.download{
-   background-color: #203454;
-   box-shadow: 15px;
-   border-radius: 100px;
-height: 60px;
+
 }
+@media (max-width: 1000px){
+  .dinprofil{
+      width: fit-content;
+      height: 7vh;
+      position: right fixed;
+      float: right;
+      border-radius: 100px;
+      padding-top: 4px;
+  }
+  
+  }
+
   /*nav end*/
 /*main start*/
 
@@ -133,6 +143,7 @@ height: 60px;
   height: auto;
   padding-top: 62px;
 background-color: #111;
+
 }
 
 @media (min-width: 1000px){
@@ -159,14 +170,14 @@ background-color: #111;
   grid-template-columns: 10% 30% 10% 30% 20%;
   grid-template-rows: 10% 40% 40% 10%;
   grid-template-areas:
-  '. . . . .'
+  '. . f . .'
   '. knapp1 . knapp4 .'   
   '. knapp2 . knapp3 .' 
   '. . . . .'
   ; 
 }
 
-.shhhh{
+.sh4{
 padding-top: 110px;
 
 }
@@ -182,15 +193,24 @@ padding-top: 110px;
      height: 80px;
      grid-row: 10vh;
      grid-template-columns: 0% 20% 20% 20% 20% 20%;
-     grid-template-rows: 20% 80% 0%;
+     grid-template-rows: 8% 85% 7%;
      grid-template-areas:
-     '. . . . . .'
+     '. . f f . .'
      '. knapp1 knapp2 knapp3 knapp4 .'   
      '. . . . . .' 
      ;
    }
+
+   .color{
+    background-color: #203454;
+  }
 }
 
+.ferklaring{
+grid-area: f;
+font-size: 12px;
+color: white;
+}
 
 .knapp1{
 grid-area: knapp1;
@@ -304,20 +324,22 @@ box-shadow: 2px 12px 16px 3px Black;
 * {box-sizing:border-box}
 
 
-.shhh{
+.sh3{
 padding-top: 100px;
 
-
+}
+.sh7{
+  background-color:#171d25;
 }
 .slideshow-container {
   padding-top:30px;
-  max-width: 100%;
+  max-width: 70%;
   position: relative;
+  background-color: #203454;
   margin: auto;
   z-index: 2;
-  background-color:#171d25;
 height: 400px;
-
+box-shadow: 2px 12px 16px 3px Black;
 }
 
 .mySlides {
@@ -355,18 +377,18 @@ height: 400px;
   font-size: 20px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 180px;
-  left: 245px;
+  bottom: 280px;
+  left: 600px;
   width: 100px;
 }
 
 .textp{
 color: white;
-font-size: 10px;
+font-size: 12px;
 padding: 8px 12px;
 position: absolute;
-bottom: 110px;
-left: 245px;
+bottom: 200px;
+left: 520px;
 width: 35%;
 
 }
@@ -375,19 +397,19 @@ width: 35%;
   font-size: 10px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 70px;
-  left: 245px;
+  bottom: 140px;
+  left: 520px;
   width: 35%;
 
 }
 
 .textutgivning{
   color: white;
-  font-size: 10px;
+  font-size: 8px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 1px;
-  left: 245px;
+  bottom: 100px;
+  left: 520px;
   width: 35%;
 
 }
@@ -430,16 +452,16 @@ width: 35%;
 }
 
 .bildslide{
-  width: 240px;
+  width: 500px;
   height: fit-content;
   padding-left: 5%;
-  padding-bottom: 10px;
+  padding-top: 50px;
 
 }
 /*slideshow end*/
 
 
-/*search bar start*/
+/*search bar start*/ /*lånat denna från föra projekt bara ändrat den så den ska passa detta projektet, jag skapa den själv i föra projektet*/
 @media screen and (max-width: 1000px){
   #wraper{
     display: grid;
@@ -448,7 +470,7 @@ width: 35%;
   column-gap: 0px;
   font-size: 12px;
   row-gap: 2vh;
-    grid-template-columns:15% 20% 30% 30% 5%;
+    grid-template-columns:10% 20% 30% 30% 10%;
     grid-template-rows: 28% 25% 22% 25%;
     grid-template-areas:
     
@@ -467,16 +489,13 @@ width: 35%;
   
   }
 
-  .shhhhh{
+  .sh5{
     display: none;
   }
-  .knappflytt{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 100px;
-    padding-right: 3%;
+  .ferg{
+    background-color: #171d25;
   }
-
+  
 }
 
 @media screen and (min-width: 1000px){
@@ -503,30 +522,24 @@ width: 35%;
     
     }
 
-    .shhhhhh{
+    .sh6{
       display: none;
     }
-    .knappflytt{
-      display: flex;
-      justify-content: center;
-      padding-bottom: 100px;
-      padding-right: 20%;
+
+    .ferg{
+      background-color: #203454;
     }
 }
 
-  
 
 
-.ferg{
-  background-color: #171d25;
-}
 
-.shhhhh{
+.sh5{
   padding-top: 120px;
 }
 
 
-.shhhhhh{
+.sh6{
   padding-top: 120px;
 }
 
@@ -536,7 +549,12 @@ width: 35%;
   color: darkgreen;
 }
 
-
+.knappflytt{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  padding-right: 3%;
+}
 
 
 .padding2{
@@ -619,3 +637,7 @@ padding-top: 5%;
 }
 
 /*footer slut*/
+
+
+
+/*extra stuff*/
