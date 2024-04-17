@@ -277,7 +277,7 @@ display: none;
 }
 .bild3{
     grid-area: pers3;
-    background-image: url(/img/steamch.png);
+    background-image: url(/img/test2\,.jpg);
     background-size: cover;
     border-radius: 100px;
     backdrop-filter: none;     
