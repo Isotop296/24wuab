@@ -1,3 +1,6 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+
 body{
   background-color: #171d25;
   padding: 0%;
@@ -546,7 +549,7 @@ width: 35%;
 .scg{
   text-align: center;
   padding-right: 6%;
-  color: darkgreen;
+  color: white;
 }
 
 .knappflytt{
