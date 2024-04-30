@@ -12,6 +12,7 @@ function openNav() {
 
 
 /*slideshow start*/
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -40,6 +41,42 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+// Kompletering, ändrade onclik till eventlisterner
+document.addEventListener("DOMContentLoaded", function() {
+  // Get references to the elements
+  var prevButton = document.getElementById("prevButton");
+  var nextButton = document.getElementById("nextButton");
+  var dot1 = document.getElementById("dot1");
+  var dot2 = document.getElementById("dot2");
+  var dot3 = document.getElementById("dot3");
+
+  // Add event listeners
+  prevButton.addEventListener("click", function() {
+    plusSlides(-1);
+  });
+
+  nextButton.addEventListener("click", function() {
+    plusSlides(1);
+  });
+
+  dot1.addEventListener("click", function() {
+    currentSlide(1);
+  });
+
+  dot2.addEventListener("click", function() {
+    currentSlide(2);
+  });
+
+  dot3.addEventListener("click", function() {
+    currentSlide(3);
+  });
+});
+// kompletering slut
+
+
+
 /*slideshow end*/
 
 
