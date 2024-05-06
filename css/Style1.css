@@ -118,7 +118,7 @@ html{
 .dinprofil{
     width: fit-content;
     height: 8vh;
-    position: right fixed;
+    position: right;
     float: right;
     border-radius: 100px;
     padding-top: 4px;
@@ -129,7 +129,7 @@ html{
   .dinprofil{
       width: fit-content;
       height: 7vh;
-      position: right fixed;
+      position: right;
       float: right;
       border-radius: 100px;
       padding-top: 4px;
